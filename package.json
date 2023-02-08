@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"parcel index.html",
-    "build":"parcel build index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Bhagyashri537/projects-repo#readme",
   "devDependencies": {
+    "@babel/core": "^7.20.12",
     "parcel": "^2.8.3",
     "process": "^0.11.10"
   },
@@ -27,4 +28,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
+ 
+
 }
