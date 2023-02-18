@@ -38,16 +38,16 @@ const Body = () => {
     ) : (
     
         <>
-        <div className="search-container">
+        <div className="p-4 bg-yellow-100 my-3">
             <input type="text"
-             className="search-text"
+             className="focus:bg-orange-200 p-2 m-2s"
              placeholder="search"
              value={searchText}
              onChange={(e) => {
                 setSearchText(e.target.value)
              }}
             />
-            <button className="search-btn"
+            <button className="p-2 m-2 bg-orange-300 text-white rounded-md hover:bg-green-500"
              onClick={() => {
                const data = filterData(searchText,allRestaurants) 
                setFilteredRestaurant(data)
@@ -55,7 +55,7 @@ const Body = () => {
              >search
             </button>
         </div>
-        <div className="restaurant-list">
+        <div className="flex flex-wrap bg-yellow-50">
             {filteredRestaurant.map((restaurant) => {
                 return (
                     <Link to={"/restaurant/" + restaurant.data.id} 
@@ -72,3 +72,51 @@ const Body = () => {
     )
 }
 export default Body;
+
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid brown;
+}
+
+.nav-items > ul {
+   display: flex;
+   list-style-type: none;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+}
+
+.logo {
+    width: 100px;
+    
+}
+
+.card {
+    width: 200px;
+    border: 1px solid brown;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card > img{
+    width: 100%;
+}
+
+.restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.shimmer-card {
+    width:200px;
+    height: 200px;
+    background: lightgray;
+    margin: 20px;
+}
+.menu {
+    display: flex;
+} */
