@@ -11,9 +11,11 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import RestaurantMenu from "./src/components/RestaurantMenu";
 
 
+
 const AppLayOut = () => {
     return (
         <>
+        
         <Header/>
         <Outlet/>
         <Footer/>
