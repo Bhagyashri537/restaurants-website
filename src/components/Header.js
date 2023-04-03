@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 
@@ -11,6 +12,9 @@ const Title = () => (
 )
 
 const Header = () =>{
+
+   const cartItems = useSelector((store) => store.cart.items) //subscribing
+   console.log(cartItems)
     return (
        <div className="flex justify-between bg-yellow-50 shadow-lg">
           <Title/>
@@ -26,7 +30,7 @@ const Header = () =>{
                     <li className="px-2">Contact</li>
                  </Link>
                  <Link to="/cart">
-                    <li className="px-2">Cart</li>
+                    <li className="px-2">Cart - {cartItems.length} Items</li>
                  </Link>
              </ul>
           </div>

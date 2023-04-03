@@ -4,7 +4,7 @@ import { IMG_CDN_URL } from "../components/config";
 const RestaurantCard = ({name,cloudinaryImageId,cuisines,lastMileTravelString,costForTwoString}) => {
     
     return (
-        <div className="w-48 p-2 m-2 shadow-lg bg-green-50 border-separate">
+        <div className="w-56 p-2 m-2 shadow-lg bg-green-50 border-separate box-content">
            <img src= {IMG_CDN_URL + cloudinaryImageId}
            />
            <h2 className="font-bold text-xl">{name}</h2>
