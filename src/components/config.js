@@ -1,6 +1,8 @@
 export const IMG_CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 
-export const FETCH_MENU_URL = "https://www.swiggy.com/dapi/menu/v4/full?lat=12.9351929&lng=77.62448069999999&menuId="
+export const FETCH_MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9351929&lng=77.62448069999999&restaurantId=425&submitAction=ENTER"
+
+export const FETCH_MENU_URL2 = 'https://www.swiggy.com/dapi/menu/v4/full?lat=12.9351929&lng=77.62448069999999&menuId='
 
 export const Restaurantlist = [
     {
@@ -716,3 +718,5 @@ export const Restaurantlist = [
        },
  
  ]
+
+ export const backgroundImg = 'https://img.freepik.com/free-photo/elevated-view-fresh-raw-tagliatelle-pasta-with-tomato-garlic-black-pepper-white-plank_23-2148194997.jpg'

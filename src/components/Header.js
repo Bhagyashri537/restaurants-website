@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Title = () => (
     <a href="/">
-   <img className="h-28 p-2"
+   <img className="h-28 p-2 rounded-xl"
     alt="logo"
-    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIlbz7UxtD02us1-KilNMvEeHSG5jP3L6Yyw&usqp=CAU"
+    src="https://wp.scoopwhoop.com/wp-content/uploads/2022/09/Screenshotter-YouTube-ZwigatoInternationalTrailerKapilSharmaShahanaGoswamiNanditaDas-124-1.jpg?w=1024"
    />
    </a>
 )
@@ -16,7 +16,7 @@ const Header = () =>{
    const cartItems = useSelector((store) => store.cart.items) //subscribing
    console.log(cartItems)
     return (
-       <div className="flex justify-between bg-yellow-50 shadow-lg">
+       <div className="flex justify-between bg-red-200 shadow-lg ">
           <Title/>
           <div className="nav-items">
              <ul className="flex py-10">

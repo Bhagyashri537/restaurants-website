@@ -38,7 +38,7 @@ const Body = () => {
     ) : (
     
         <>
-        <div className="p-4 bg-yellow-100 my-3">
+        <div className="p-4 bg-red-100 my-3">
             <input type="text"
              className="focus:bg-orange-200 p-2 m-2s"
              placeholder="search"
@@ -55,7 +55,7 @@ const Body = () => {
              >search
             </button>
         </div>
-        <div className="flex flex-wrap bg-yellow-50">
+        <div className="flex flex-wrap bg-yellow-50 p-5 ">
             {filteredRestaurant.map((restaurant) => {
                 return (
                     <Link to={"/restaurant/" + restaurant.data.id} 
