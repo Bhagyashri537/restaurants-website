@@ -4,6 +4,7 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { filterData } from "../Utils/helper";
 import useOnline from "../Utils/useOnline"
+import { FcSearch } from "react-icons/fc";
 
 
 
@@ -38,9 +39,9 @@ const Body = () => {
     ) : (
     
         <>
-        <div className="p-4 bg-red-100 my-3">
+        <div className="p-4 bg-yellow-100 my-3 flex justify-center">
             <input type="text"
-             className="focus:bg-orange-200 p-2 m-2s"
+             className="focus:bg-orange-200 p-2 m-2s w-72 rounded-lg "
              placeholder="search"
              value={searchText}
              onChange={(e) => {
@@ -52,10 +53,12 @@ const Body = () => {
                const data = filterData(searchText,allRestaurants) 
                setFilteredRestaurant(data)
              }}
-             >search
+             > < FcSearch/>
             </button>
+           
+            
         </div>
-        <div className="flex flex-wrap bg-yellow-50 p-5 ">
+        <div className="flex flex-wrap bg-yellow-50 p-5 pl-24">
             {filteredRestaurant.map((restaurant) => {
                 return (
                     <Link to={"/restaurant/" + restaurant.data.id} 
@@ -73,50 +76,3 @@ const Body = () => {
 }
 export default Body;
 
-/* .header {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    border: 1px solid brown;
-}
-
-.nav-items > ul {
-   display: flex;
-   list-style-type: none;
-}
-
-.nav-items > ul > li {
-    padding: 10px;
-}
-
-.logo {
-    width: 100px;
-    
-}
-
-.card {
-    width: 200px;
-    border: 1px solid brown;
-    padding: 10px;
-    margin: 10px;
-}
-
-.card > img{
-    width: 100%;
-}
-
-.restaurant-list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-
-.shimmer-card {
-    width:200px;
-    height: 200px;
-    background: lightgray;
-    margin: 20px;
-}
-.menu {
-    display: flex;
-} */

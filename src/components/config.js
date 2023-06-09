@@ -720,3 +720,7 @@ export const Restaurantlist = [
  ]
 
  export const backgroundImg = 'https://img.freepik.com/free-photo/elevated-view-fresh-raw-tagliatelle-pasta-with-tomato-garlic-black-pepper-white-plank_23-2148194997.jpg'
+
+ export const backgroundImg2 = 'https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+
+ export const menuImgurl = "https://cdn.quotesgram.com/img/92/2/174188505-ACQYR-Wallpaper-005_Moliere-1920x1200.jpg"

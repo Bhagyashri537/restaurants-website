@@ -16,7 +16,7 @@ const Header = () =>{
    const cartItems = useSelector((store) => store.cart.items) //subscribing
    console.log(cartItems)
     return (
-       <div className="flex justify-between bg-red-200 shadow-lg ">
+       <div className="flex justify-between bg-yellow-400 shadow-lg ">
           <Title/>
           <div className="nav-items">
              <ul className="flex py-10">
